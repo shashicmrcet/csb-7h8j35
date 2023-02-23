@@ -4,34 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E commerce</title>
-    <!-- Start of Async Drift Code -->
-<script>
-    "use strict";
-    
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('3ipbxnvidzzp');
-    </script>
-    <!-- End of Async Drift Code -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
      <link rel="stylesheet" href="style.css">
@@ -46,8 +18,8 @@
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active"  href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -63,50 +35,21 @@
 
     <!-- Hero section -->
 
-    <section id="hero">
-        <h4>Offer for shop</h4>
-        <h2>Super excited deals</h2>
-        <h1>On all items</h1>
+    <section id="page-header" class="shop-header">
+       
+        <h2>#Stay ShopKart /</h2>
+       
         <p>save more with offers & get up to 50% off</p>
-        <button>Shop now</button>
+    
     </section>
 
-<!-- Features section -->
-
-<section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="images/f2.jpg" alt="">
-        <h6>Free shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="images/buy.jpg" alt="">
-        <h6>Online order</h6>
-    </div>
-    <div class="fe-box">
-        <img src="images/save.jpg" alt="">
-        <h6>Save Money</h6>
-    </div>
-    <div class="fe-box">
-        <img src="images/promo.jpg" alt="">
-        <h6>Promotions</h6>
-    </div>
-    <div class="fe-box">
-        <img src="images/happy1.jpeg" alt="">
-        <h6>Happy Hours</h6>
-    </div>
-    <div class="fe-box">
-        <img src="images/support.jpg" alt="">
-        <h6>Support</h6>
-    </div>
-</section>
 
 <!-- Feature product -->
 
 <section id="product1" class="section-p1">
-    <h2>Featured product</h2>
-    <p>New collection's</p>
+
     <div class="pro-container">
-        <div class="pro">
+        <div class="pro" onclick="window.location.href='sproduct.html';">
             <img src="images/shop/product2.jpg" alt="">
             <div class="des">
                 <span>Peter England</span>
@@ -122,7 +65,7 @@
             </div>
             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="pro">
+        <div class="pro" onclick="window.location.href='sproduct.html';">
             <img src="images/feapro2.jpg" alt="">
             <div class="des">
                 <span>Allen solly</span>
@@ -234,21 +177,7 @@
             </div>
             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-    </div>
-</section>
 
-<!-- Banner section -->
-
-<section id="banner" class="section-m1">
-    <h4>Advance offers</h4>
-    <h2> Up to <span>60% off</span> - All products & Accessories</h2>
-    <button class="normal">Explore more</button>
-</section>
-
-<section id="product1" class="section-p1">
-    <h2>New Arrivals</h2>
-    <p>Festive Collection's</p>
-    <div class="pro-container">
         <div class="pro">
             <img src="images/new/New1.jpg" alt="">
             <div class="des">
@@ -380,37 +309,10 @@
     </div>
 </section>
 
-<!-- Likable deals -->
-
-<section id="sm-banner" class="section-p1">
-    <div class="banner-box">
-        <h4>Extremely Likable deals</h4>
-        <h2>Buy 1 get 1 free</h2>
-        <span>The best Classic deals is on sale at ShopKart</span>
-        <button class="white">Explore more</button>
-    </div>
-    <div class="banner-box banner-box2">
-        <h4>Season sale on the way</h4>
-        <h2>Upcoming season</h2>
-        <span>The best Classic deals is on sale at ShopKart</span>
-        <button class="white">Collection</button>
-    </div>
-
-</section>
-
-<section id="banner3">
-    <div class="banner-box">
-        <h2>Season sale</h2>
-        <h3>Summer Sale ~50% OFF</h3>
-     </div>
-     <div class="banner-box banner-box2">
-        <h2>New Collection's</h2>
-        <h3>Sale ~50% OFF</h3>
-     </div>
-     <div class="banner-box banner-box3">
-        <h2>Accessories</h2>
-        <h3>Summer Sale ~50% OFF</h3>
-     </div>
+<section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
 </section>
 
 <!-- newsletter -->
